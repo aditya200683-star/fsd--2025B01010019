@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .navi a {
+            display: inline;
+            color: black; 
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .one a{
+            display: inline;
+            color: black; 
+            padding: 14px 16px;  
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .bgimage {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            min-height: 100vh;   
+            position: relative;     
+        }
+        .text
+        {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            color: white;
+            font-size: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            gap: 100px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 16px;
+            text-align: center;
+        }
+        .card img {
+             width: 60%;
+             height: 100%;
+              object-fit: cover;
+               border-radius: 10px;
+                margin-bottom: 10px;
+        }
+        .card h3 {
+             font-size: 18px;
+              margin: 8px 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin: 4px 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+ /* Responsive Breakpoints */
+ @media (max-width: 1024px) {
+ .grid {
+ grid-template-columns: repeat(4, 2fr); /* 2 columns for tablets */
+ }
+ }
+ @media (max-width: 600px) {
+ .grid {
+ grid-template-columns: 2fr; /* 1 column for mobile */
+ }
+ }
+    </style>
+     
+</head>
+<body>
+    <header>
+        <h1>AP store</h1>
+    </header>
+    
+    <nav class="navi" style="background-color: rgb(239, 247, 250); padding: 10px; margin-left: auto; border: 2px solid black;" text-spacing="30px" >
+        <a href="#"><u>Home</u></a>      
+        <a href="#"><u>About us</u></a>
+        <a href="#"><u><b>Special</b> Products </u></a> 
+            <a href="#"><u>history</u></a>
+             <a href="#"><u>Our Outlets</u></a>
+            <a href="#"><u>Contact us</u></a>
+        <input type="search" style="height: 40px; width: 200px; border-radius: 20cap;" id="q" name="q" placeholder="Enter product name" >
+            <button type="submit">Search</button>
+    </nav>
+    <BR>
+    <div style="margin-bottom: 10px; padding: 10px; border: 2px solid black;">
+        <nav class="one" style="background-color: rgb(249, 247, 247)">
+        <a href="#"><u>PC</u></a>      
+        <a href="#"><u>LAPTOP</u></a>
+        <a href="#"><u>GAMING LAPTOP</u></a>
+        <a href="#"><u>MOUSE</u></a>
+        <a href="#"><u>KEYBOARD</u></a>
+        <a href="#"><u>GRAPIC CARD</u></a>
+        <a href="#"><u>RAM</u></a>
+        <a href="#"><u>HARDDRIVE</u></a>
+        <a href="#"><u>PENDRIVE</u></a>
+        <a href="#"><u>MONITOR</u></a>
+        <a href="#"><u>STORAGE</u></a>
+    </nav></div>
+    <div class="bgimage" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ae8d07124697643.610993c701c4d.png)">
+        <span class="text"style="font-size: 25px">
+        </span>
+    </div>
+    <div class="grid">
+ <div class="card">
+ <img src="https://m.media-amazon.com/images/I/71FLsWWmE8L._AC_SL1500_.jpg" alt="product 1" >
+ <h3>CyberpowerPC Gamer Xtreme VR Gaming PC</h3>
+ <p>Intel Core i7-12700F 2.1GHz</p>
+ <p class="price">₹50,000.00</p>
+ </div>
+ <div class="card">
+ <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_97958704/fee_786_587_png" alt="product 2">
+ <h3>Le 20.000+ migliori foto di Pc</h3>
+ <p>best sale product </p>
+ <p class="price">₹39999.00</p>
+ </div>
+ <div class="card">
+ <img src="https://cdn.thepcenthusiast.com/wp-content/uploads/2024/05/nvidia-rtx-5090-founders-edition-leaks.jpg" alt="Nvidia Geforce Rtx 5090 The Ultimate Graphics Card Of 2025 May 2025 ...">
+ <h3>geforce rtx 5090</h3>
+ <p>Nvidia Geforce Rtx 5090</p>
+ <p class="price">₹59999.00</p>
+ </div>
+ <div class="card">
+ <img src="https://www.custompc.com/wp-content/sites/custompc/2023/03/nvidia-geforce-rtx-4090-review-01.jpg" alt="Nvidia GeForce RTX 4090 review" >
+ <h3>geforce rtx 4090 </h3>
+ <p>Nvidia GeForce RTX 4090</p>
+ <p class="price">₹69999.00</p>
+ </div>
+    
+</body>
+</html>
+
+

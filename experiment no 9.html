@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PC store</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background: #f5f5f5;
+ padding: 20px;
+ }
+ header {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+ h2 {
+ text-align: center;
+ margin-bottom: 20px;
+ }
+ /* Product grid */
+ .grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+ gap: 100px;
+ }
+ /* Product card */
+ .card {
+ background: #fff;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ padding: 16px;
+ text-align: center;
+ }
+ .card img {
+ width: 60%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 10px;
+ margin-bottom: 10px;
+ }
+ .card h3 {
+ font-size: 18px;
+ margin: 8px 0;
+ }
+ .card p {
+ font-size: 14px;
+ color: #555;
+ margin: 4px 0;
+ }
+ .price {
+ font-weight: bold;
+ color: #007bff;
+ }
+ /* Responsive Breakpoints */
+ @media (max-width: 1024px) {
+ .grid {
+ grid-template-columns: repeat(4, 2fr); /* 2 columns for tablets */
+ }
+ }
+ @media (max-width: 600px) {
+ .grid {
+ grid-template-columns: 2fr; /* 1 column for mobile */
+ }
+ }
+ </style>
+</head>
+<body>
+<header>
+ <h1>PC STORE</h1>
+ </header>
+ <div class="grid">
+ <div class="card">
+ <img src="https://m.media-amazon.com/images/I/71FLsWWmE8L._AC_SL1500_.jpg" alt="product 1" >
+ <h3>CyberpowerPC Gamer Xtreme VR Gaming PC</h3>
+ <p>Intel Core i7-12700F 2.1GHz</p>
+ <p class="price">₹50,000.00</p>
+ </div>
+ <div class="card">
+ <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_97958704/fee_786_587_png" alt="product 2">
+ <h3>Le 20.000+ migliori foto di Pc</h3>
+ <p>best sale product </p>
+ <p class="price">₹39999.00</p>
+ </div>
+ <div class="card">
+ <img src="https://cdn.thepcenthusiast.com/wp-content/uploads/2024/05/nvidia-rtx-5090-founders-edition-leaks.jpg" alt="Nvidia Geforce Rtx 5090 The Ultimate Graphics Card Of 2025 May 2025 ...">
+ <h3>geforce rtx 5090</h3>
+ <p>Nvidia Geforce Rtx 5090</p>
+ <p class="price">₹59999.00</p>
+ </div>
+ <div class="card">
+ <img src="https://www.custompc.com/wp-content/sites/custompc/2023/03/nvidia-geforce-rtx-4090-review-01.jpg" alt="Nvidia GeForce RTX 4090 review" >
+ <h3>geforce rtx 4090 </h3>
+ <p>Nvidia GeForce RTX 4090</p>
+ <p class="price">₹69999.00</p>
+ </div>
+ </div>
+</body>
+</html>

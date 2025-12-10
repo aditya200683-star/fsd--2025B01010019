@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-commerce Navbar</title>
+</head>
+<style>
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color:rgb(232, 231, 234);
+color: white;
+padding: 15px 20px;
+}
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+color:black
+}
+.nav-links {
+display: flex;
+list-style: none;
+}
+.nav-links li {
+margin: 0 15px;
+}
+.nav-links a {
+text-decoration: none;
+color:brown;
+font-size: 1rem;
+}
+.actions a {
+margin-left: 15px;
+color: brown;
+text-decoration: none;
+font-weight: bold;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+.nav-links {
+display: none; /* Hide menu on smaller screens */
+}
+.actions {
+font-size: 0.9rem;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+.nav-links a {
+font-size: 0.9rem;
+}
+}
+@media (min-width: 1025px) {
+.nav-links a {
+font-size: 1rem;
+}
+}
+</style>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+<div class="logo">AP STORE</div>
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#"> NEW Products</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">SUPER DEALS</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+<div class="actions">
+<a href="#">Cart 🛒</a>
+<a href="#">My Account</a>
+    <a href="#">Signup</a>
+<a href="#">Login</a>
+</div>
+</nav>
+<section>
+<h1>Welcome to AP STORE </h1>
+</section>
+</body>
+</html>
+
